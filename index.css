@@ -1,0 +1,185 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+html{
+    box-sizing: border-box;
+}
+body{
+    margin:0px;
+    background-color: #ffffff;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Cg fill='%23000000' fill-opacity='0.18'%3E%3Cpath fill-rule='evenodd' d='M0 0h4v4H0V0zm4 4h4v4H4V4z'/%3E%3C/g%3E%3C/svg%3E");
+}
+header{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top:0px;
+    margin-bottom:10px;
+    margin-left:10px;
+    margin-right:10px;
+    padding:5px;
+}
+h1{
+    font-family:'Pacifico', cursive;
+    font-size:250%;
+}
+button{
+    font-size:20px;
+    margin:20px;
+    padding:10px;
+    outline:none;
+    box-shadow:2px 2px 3px 3px grey;
+    background-color:black;
+    color:white;
+}
+button:hover{
+    background-color:grey;
+    /* color:black; */
+    box-shadow:2px 2px 3px 3px rgba(0,0,0,0.7);
+}
+button:active{
+    transform:scale(50%);
+    transform:translate(2px,2px);
+    box-shadow:0px 0px 0px 0px;
+}
+#grid-container{
+    display:inline-grid;
+    background-color:black;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    height:300px;
+    width:300px;
+    border-radius: 10px;
+    position:absolute;
+    top:20%;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    margin:auto;
+    padding:10px;
+    border:2px solid black;
+}
+.grid-item{
+    background-color:white;
+    color:black;
+    font-size:40px;
+    text-align:center;
+    padding:5px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    cursor:pointer;
+    border:2px solid black;
+}
+
+#player{
+    text-align:center;
+    font-size:30px;
+    background-color:white;
+    cursor: pointer;
+}
+
+/* styling the result page */
+.result{
+    cursor:pointer;
+    max-height:100vh;
+    max-width:100vw;
+    background-color:rgba(128, 128, 128,0.8);
+    color:black;
+    border:2px solid black;
+    border-radius:3px;
+    position:absolute;
+    top:0px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    margin:auto;
+    text-align:center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size:80px;
+    font-family:monospace;
+}
+
+
+/* styling the load-page */
+#load-page{
+    position:absolute;
+    top:0px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    margin:auto;
+    max-height:100vh;
+    max-width:100vw;
+    background-color:rgba(128, 128, 128,0.95);
+    font-size:34px;
+    font-weight: bold;
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-rows: 200px 100px;
+    align-items: center; 
+    justify-content:center;
+    text-align:center;
+    align-content: center;
+}
+
+#onePlayer,#twoPlayer{
+    background-color:black;
+}
+#onePlayer:hover{
+    background-color:whitesmoke;
+    color:black;
+}
+#twoPlayer:hover{
+    background-color:whitesmoke;
+    color:black;
+}
+#mode-decider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#welcome-msg{
+    cursor: pointer;
+    padding:5px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 5px;
+    font-size:40px;
+}
+
+/* classes for the symbol selecting page */
+.symbol{
+    position:absolute;
+    top:0px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    margin:auto;
+    max-height:100vh;
+    max-width:100vw;
+    background-color:rgba(128, 128, 128,0.95);
+    font-size:34px;
+    font-weight: bold;
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-rows: 200px 100px;
+    align-items: center; 
+    justify-content:center;
+    text-align:center;
+    align-content: center;
+}
+.symbolOption{
+    margin-left:20px;
+    margin-right:20px;
+    margin-top:10px;
+    padding:20px;
+    font-size:24px;
+}
