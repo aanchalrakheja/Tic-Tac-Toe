@@ -67,6 +67,7 @@ onePlayer.addEventListener("click",function(){
     mode.innerHTML="MODE : ONE PLAYER";
     container.addEventListener('click',function(e)
     {
+        console.log("entered");
         var clicked=e.target;
         console.log(clicked);
         if(clicked.innerHTML===" ")
